@@ -1,0 +1,77 @@
+swagger: '2.0'
+info:
+  description: This is the swagger file that goes with the server code
+  version: 1.0.0
+  title: Swagger REST Api
+consumes:
+  - application/json
+produces:
+  - application/json
+basePath: /api
+paths:
+  /api:
+    get:
+      operationId: api
+      tags:
+        - api
+      summary: Get service information
+      description: Get service information
+      responses:
+        '200':
+          description: Successful index operation
+          schema:
+            type: "string"
+  /api/search:
+    get:
+      operationId: search
+      tags:
+        - search
+      summary: The index data structure supported by the server application
+      description: Get the list of indexes
+      responses:
+        '200':
+          description: Successful index operation
+          schema:
+            type: "object"
+            items:
+              $ref: "#/definitions/Info"
+    post:
+      operationId: search2
+      tags:
+        - search
+      summary: The index data structure supported by the server application
+      description: Get the list of indexes
+      responses:
+        '200':
+          description: Successful index operation
+          schema:
+            type: "object"
+            items:
+              $ref: "#/definitions/Info"
+definitions:
+  Info:
+    type: "object"
+    properties:
+      query_text:
+        type: "string"
+      number_of_occurrences:
+        type: "integer"
+        format: "int64"
+      occurrences:
+        type: "array"
+        items:
+          $ref: "#/definitions/Occurrence"
+  Occurrence:
+    type: "object"
+    properties:
+      start:
+        type: "integer"
+        format: "int64"
+      end:
+        type: "integer"
+        format: "int64"
+      line:
+        type: "integer"
+        format: "int64"
+      in_sentence:
+        type: "string"
