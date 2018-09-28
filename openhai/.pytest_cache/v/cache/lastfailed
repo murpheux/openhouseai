@@ -1,0 +1,6 @@
+{
+  "tests/test_service.py.617ae3f34a3f2588f83b25f91b2f549a.py": true,
+  "tests/test_service.py::test_search_get": true,
+  "tests/test_service.py::test_search_get_with_argument_value": true,
+  "tests/test_service.py::test_search_post_with_no_argument": true
+}
