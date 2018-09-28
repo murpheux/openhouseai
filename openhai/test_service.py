@@ -5,8 +5,8 @@
 
 import pytest
 import json
-from service_v1 import create_app
-from flask import url_for
+from .service_v1 import create_app
+from flask import url_for, testing
 from flask.testing import FlaskClient
 
 

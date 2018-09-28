@@ -1,14 +1,14 @@
 [
-  "tests/test_service.py::test_service_availability",
-  "tests/test_service.py::test_search_get_with_no_argument",
-  "tests/test_service.py::test_search_get_with_argument_no_known_argument",
-  "tests/test_service.py::test_search_get_with_argument_blank",
-  "tests/test_service.py::test_search_get_with_argument_not_found",
-  "tests/test_service.py::test_search_get_with_argument_value_found_one",
-  "tests/test_service.py::test_search_get_with_argument_value_found_n",
-  "tests/test_service.py::test_search_post_with_argument_no_known_argument",
-  "tests/test_service.py::test_search_post_with_argument_blank",
-  "tests/test_service.py::test_search_post_with_argument_not_found",
-  "tests/test_service.py::test_search_post_with_argument_value_found_one",
-  "tests/test_service.py::test_search_post_with_argument_value_found_n"
+  "test_service.py::test_service_availability",
+  "test_service.py::test_search_get_with_no_argument",
+  "test_service.py::test_search_get_with_argument_no_known_argument",
+  "test_service.py::test_search_get_with_argument_blank",
+  "test_service.py::test_search_get_with_argument_not_found",
+  "test_service.py::test_search_get_with_argument_value_found_one",
+  "test_service.py::test_search_get_with_argument_value_found_n",
+  "test_service.py::test_search_post_with_argument_no_known_argument",
+  "test_service.py::test_search_post_with_argument_blank",
+  "test_service.py::test_search_post_with_argument_not_found",
+  "test_service.py::test_search_post_with_argument_value_found_one",
+  "test_service.py::test_search_post_with_argument_value_found_n"
 ]

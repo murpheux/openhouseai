@@ -1,3 +1,4 @@
 Flask==1.0.2
 pytest==3.6.3
 gunicorn==19.9.0
+connexion==1.5.3
