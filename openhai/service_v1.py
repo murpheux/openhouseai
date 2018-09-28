@@ -18,18 +18,17 @@ def create_app(data=[]):
     #app = connexion.FlaskApp(__name__, specification_dir='./')
     #app.add_api('swagger.yml')
 
-
     def search_in_data(search_string):
         line = 0
 
         if not data:
             with open('data/king-i.txt', 'r') as file:
                 for text_line in file:
-                    data.append(text_line)
+                    data.append(text_line) # populate data list on first run
                     line = line + 1
                     for m in re.finditer(search_string, text_line):
                         yield line, m.start(), m.end(), text_line
-        else:
+        else:   # unit test and 2nd+ run
             for text_line in data:
                 line = line + 1
                 for m in re.finditer(search_string, text_line):
